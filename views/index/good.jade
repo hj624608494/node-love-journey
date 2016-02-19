@@ -1,0 +1,422 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title love-good
+    meta(name='description', content='love-journey')
+    meta(name='viewport', content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    meta(name='format-detection', content='telephone=no')
+    link(rel='stylesheet', type='text/css', href='/dist/plugins/iconfont/iconfont.css')
+    // style
+    link(rel='stylesheet', type='text/css', href='/dist/css/good.css')
+    // component
+    link(rel='stylesheet', type='text/css', href='/dist/css/component.css')
+    // According to the screen automatically set the font size
+    script(src='/dist/js/factory/accordingScreenAutoSetFontSize.js')
+  body
+    .love-container
+      // 商品头部
+      .love-header
+        .love-header-swiper
+          .love-header-img.swiper.J_header_swiper
+            .item
+              img(src='/dist/images/love-changeshop.jpg', width='100%')
+            .item
+              img(src='/dist/images/love-changeshop.jpg', width='100%')
+            .item
+              img(src='/dist/images/love-changeshop.jpg', width='100%')
+          .love-header-sign
+            .love-header-icon
+              a.header-icon-return.iconfont.icon-fanhui(href='javascropt:;')
+            .love-header-car
+              a.header-icon-shopcar.iconfont.icon-gouwuche(href='javascropt:;')
+          .love-header-ordina
+            span.J_curOrdina 1
+            span /
+            span.J_ordinaLen
+      // 商品介绍
+      .love-ntroduce
+        .love-ntroduce-title 预售送围巾 气质夹棉加厚毛呢大衣
+        .love-ntroduce-content
+          | 超级推荐的一款呢大衣 简单好穿大牌感 在颜色的选择上 其实有做很多个颜色的样衣 然后在室外室内都试穿了 最后选定出来的这两个洋气又好穿的颜色
+          | 这款版型搭配深驼和正红非常有气质 长度属于中长款 就是很大气的那种长度（预售前200名赠送模特同款黑色围巾噢！！！）简单搭配针织衫、连衣裙、打底裤、打底袜就很时髦
+          | 面料是韩国进口的针织羊绒 同时具备性价比和好品质 中长款设计刚刚露出身体最瘦的小腿部分，显瘦又有女人味^^ 轻洗轻揉， 请勿机洗。
+        .love-ntroduce-price
+          span.price-now ¥235.20
+          span.price-before ¥336.00
+          span.price-sale 7折
+        .love-ntroduce-other
+          span 全国包邮
+          span.other-sale 销量298
+      // 
+      .mbanner-top
+      // app下载
+      .love-download
+        .love-download-app
+          a(href='javascript:;')
+            img(src='/dist/images/love-top.jpg')
+        #J-download-more.love-download-more
+          span#J-download-more-full2.download-more-full2
+            a(href='javascript:;')
+              | 更多
+              i.download-more-mark.iconfont.icon-fanhui
+          span.download-more-full1
+            | 全店满279元减20元
+      // 弹出优惠券
+      #J-love-coupon.love-coupon
+        .love-coupon-concessions
+          h1 店铺优惠
+          ul
+            li
+              span 全店满198元减5元
+              a(href='javascript:;') 点击领取
+            li
+              span 全店满198元减5元
+              a(href='javascript:;') 点击领取
+            li
+              span 全店满198元减5元
+              a(href='javascript:;') 点击领取
+          #J-coupon-ok.love-coupon-ok
+            span 我知道了
+      // mask
+      #J_mask.love-mask
+      // 
+      .mbanner-top
+      // 累计评价
+      //
+        <div class="love-appraise">
+        <div class="love-appraise-total" id="J-appraise-total">
+        <span class="appraise-total-count">
+        <a href="javascript:;">累计评价 17</a>
+        </span>
+        <span class="appraise-total-more" id="J-appraise-total-more">
+        <a href="javascript:;">更多
+        <i class="download-more-mark iconfont icon-fanhui"></i>
+        </a>
+        </span>
+        </div>
+        <div class="love-appraise-details">
+        <div class="love-appraise-item1">1</div>
+        <div class="love-appraise-item">2</div>
+        </div>
+        </div>
+      // 
+      // <div class="mbanner-top"></div>
+      // 收藏
+      .love-collect
+        .love-collect-marked.clearfix
+          .love-collect-shop
+            .collect-shop-logo
+              a(href='javascript:;')
+                img(src='/dist/images/love-dianpulogo.jpg')
+          .love-collect-evaluate
+            p.collect-evaluate-name 邂逅优品
+            p.collect-evaluate-num
+              span.evaluate-num  总销量78304
+              span 收藏数30658
+          .love-collect-collect
+            .love-collect-favorites
+              | + 收藏
+        .love-collect-sati
+          ul.center
+            li
+              span 描述相符
+              em 4.7
+              i 高
+            li
+              span 描述相符
+              em 4.7
+              i 高
+            li
+              span 描述相符
+              em 4.7
+              i 高
+      // 
+      .love-pinkage
+        .love-pinkage-freight
+          | 全部商品(198)
+        .love-pinkage-all
+          | 进入小店
+      // 
+      .mbanner-top
+      // 图文详情
+      .love-details
+        #J-details-title.love-details-title.clearfix
+          a#J-details-title1.details-title1(href='javascript:;')
+            span 图文详情
+            a#J-details-title2.details-title2(href='javascript:;')
+              span 商品参数
+              a#J-details-title3.details-title3(href='javascript:;')
+                span 热卖推荐
+              i#J-details-line.love-details-line
+      // 
+      #J-details-all.love-details-all.clearfix
+        .details-all.clearfix
+          ul
+            li#J-details(style='display:block')
+              .details-all-explain
+                p.explain-start
+                p.explain-text
+                  | 超级推荐的一款呢大衣 简单好穿大牌感
+                  | 在颜色的选择上 其实有做很多个颜色的样衣
+                  | 然后在室外室内都试穿了
+                  | 最后选定出来的这两个洋气又好穿的颜色
+                  | 这款版型搭配深驼和正红非常有气质
+                  | 长度属于中长款 就是很大气的那种长度
+                  | （预售前200名赠送模特同款黑色围巾噢！！！）
+                  | 简单搭配针织衫、连衣裙、打底裤、打底袜就很时髦
+                  | 面料是韩国进口的针织羊绒
+                  | 同时具备性价比和好品质
+                  | 中长款设计刚刚露出身体最瘦的小腿部分，显瘦又有女人味^^
+                  | 轻洗轻揉， 请勿机洗。
+                p.explain-end
+              .details-all-dress
+                p 穿着效果
+                .details-all-img
+                  img(src='/dist/images/love-changeshop.jpg')
+                  img(src='/dist/images/love-img1.jpg')
+                  img(src='/dist/images/love-img3.jpg')
+                  img(src='/dist/images/love-img4.jpg')
+              .details-all-dress
+                p 整体款式
+                .details-all-img
+                  img(src='/dist/images/love-img5.jpg')
+                  img(src='/dist/images/love-img6.jpg')
+                  img(src='/dist/images/love-img7.jpg')
+                  img(src='/dist/images/love-img8.jpg')
+                  img(src='/dist/images/love-img9.jpg')
+                  img(src='/dist/images/love-img10.jpg')
+                  img(src='/dist/images/love-img11.jpg')
+                  img(src='/dist/images/love-img12.jpg')
+                  img(src='/dist/images/love-img13.jpg')
+              // 产品参数
+            li
+              .details-all-parameter
+                .item
+                  table
+                    tbody
+                      tr
+                        td 尺码
+                        td xs
+                        td s
+                        td m
+                      tr
+                        td 衣长
+                        td 88
+                        td 89
+                        td 90
+                      tr
+                        td 袖长
+                        td 39
+                        td 40
+                        td 41
+                      tr
+                        td 胸围
+                        td 110
+                        td 114
+                        td 118
+                .param-list.clearfix
+                  div
+                    span.param-list-specific 细节
+                    span.param-list-other 其他
+                  div
+                    span.param-list-specific 袖型
+                    span.param-list-other 其他袖型
+                  div
+                    span.param-list-specific 风格
+                    span.param-list-other 日韩，清新，甜美
+                  div
+                    span.param-list-specific 材质
+                    span.param-list-other 毛呢
+                  div
+                    span.param-list-specific 版型
+                    span.param-list-other O型(茧型)
+                  div
+                    span.param-list-specific 衣长
+                    span.param-list-other 长款(81cm-100cm)
+                  div
+                    span.param-list-specific 衣门襟
+                    span.param-list-other 一粒单排扣
+                  div
+                    span.param-list-specific 图案
+                    span.param-list-other 其他
+                  div
+                    span.param-list-specific 袖长
+                    span.param-list-other 长袖
+            // 热门推荐
+            li
+              .details-all-hot.clearfix
+                .all-hot-img
+                  a(href='javascript:;')
+                    img(src='/dist/images/love-hot1.jpg')
+                  p 冬日一抹阳光
+                  p
+                    span.hot-img-price ¥198.8
+                    span.iconfont.icon-xin.hot-img-num 2540
+                .all-hot-img
+                  a(href='javascript:;')
+                    img(src='/dist/images/love-hot2.jpg')
+                  p 冬日一抹阳光
+                  p
+                    span.hot-img-price ¥198.8
+                    span.iconfont.icon-xin.hot-img-num 2540
+                .all-hot-img
+                  a(href='javascript:;')
+                    img(src='/dist/images/love-hot3.jpg')
+                  p 冬日一抹阳光
+                  p
+                    span.hot-img-price ¥198.8
+                    span.iconfont.icon-xin.hot-img-num 2540
+                .all-hot-img
+                  a(href='javascript:;')
+                    img(src='/dist/images/love-hot4.jpg')
+                  p 冬日一抹阳光
+                  p
+                    span.hot-img-price ¥198.8
+                    span.iconfont.icon-xin.hot-img-num 2540
+                .all-hot-img
+                  a(href='javascript:;')
+                    img(src='/dist/images/love-hot4.jpg')
+                  p 冬日一抹阳光
+                  p
+                    span.hot-img-price ¥198.8
+                    span.iconfont.icon-xin.hot-img-num 2540
+                .all-hot-img
+                  a(href='javascript:;')
+                    img(src='/dist/images/love-hot3.jpg')
+                  p 冬日一抹阳光
+                  p
+                    span.hot-img-price ¥198.8
+                    span.iconfont.icon-xin.hot-img-num 2540
+                .all-hot-img
+                  a(href='javascript:;')
+                    img(src='/dist/images/love-hot6.jpg')
+                  p 冬日一抹阳光
+                  p
+                    span.hot-img-price ¥198.8
+                    span.iconfont.icon-xin.hot-img-num 2540
+                .all-hot-img
+                  a(href='javascript:;')
+                    img(src='/dist/images/love-hot7.jpg')
+                  p 冬日一抹阳光
+                  p
+                    span.hot-img-price ¥198.8
+                    span.iconfont.icon-xin.hot-img-num 2540
+                .all-hot-img
+                  a(href='javascript:;')
+                    img(src='/dist/images/love-hot4.jpg')
+                  p 冬日一抹阳光
+                  p
+                    span.hot-img-price ¥198.8
+                    span.iconfont.icon-xin.hot-img-num 2540
+      // 
+      .love-foot-bottom
+        .foot-bottom
+          .love-foot-talk
+            span.iconfont.icon-liaotian
+            span.foot-talk 私聊
+          .love-foot-like
+            span.iconfont.icon-xin
+            span.foot-like 喜欢
+          .love-foot-shopcar
+            span.foot-shopcar 加入购物车
+            span.foot-shopping 立即购买
+    // zepto
+    script(src='/dist/plugins/zepto/zepto.min.js')
+    // util
+    script(src='/dist/js/factory/util.js')
+    // swiper-tiny
+    link(rel='stylesheet', href='/dist/plugins/swiper-tiny/swiper.css')
+    script(src='/dist/plugins/swiper-tiny/swiper.js')
+    script.
+      $(function(){
+      function headerswiper(){
+      var swiper = new Swiper();
+      swiper.on('swiped', function(prev, current){
+      // console.log(prev)
+      // console.log(current)
+      var curOrdina = (current+1)
+      var ordinaLen = $('.J_header_swiper .item').length;
+      $('.J_curOrdina').html(curOrdina);
+      $('.J_ordinaLen').html(ordinaLen);
+      })
+      $('.J_ordinaLen').html($('.J_header_swiper .item').length);
+      }
+      headerswiper();
+      })
+    script(type='text/javascript').
+      window.onload=function() {
+      var aDetailstitle = document.getElementById('J-details-title').getElementsByTagName('a');
+      var aDetailsline = document.getElementById('J-details-line');
+      var aDetailsall = document.getElementById('J-details-all').getElementsByTagName('li');
+      for (var i = 0; i < aDetailstitle.length; i++) {
+      aDetailstitle[i].index = i;
+      aDetailstitle[i].onclick = function(){
+      for (var i = 0; i < aDetailstitle.length; i++) {
+      if (aDetailstitle[i].className.indexOf('active')) {
+      aDetailstitle[i].className = aDetailstitle[i].className.replace('active','');
+      };
+      // aDetailstitle[i].className="";
+      aDetailsall[i].style.display="none"
+      };
+      aDetailsline.style.left = this.index* 33 + '%';
+      // this.className = 'active';
+      if (!this.className.indexOf('active')) {
+      this.className = this.className + ' active';
+      };
+      aDetailsall[this.index].style.display="block"
+      }
+      }
+      // function Preferential(){
+      //     $('#J-download-more').click(function(){
+      //         $('#love-coupon').css('display', 'block');
+      //         $('#love-mask').css('display', 'block');
+      //     })
+      //     $('#J-coupon-ok').click(function(){
+      //         $('#love-coupon').css('display', 'none');
+      //         $('#love-mask').css('display', 'none');
+      //     })
+      // }
+      // Preferential();
+      var oDownloadmore = document.getElementById('J-download-more');
+      var oLovecoupon = document.getElementById('J-love-coupon');
+      var oMask = document.getElementById('J_mask');
+      var oCouponok = document.getElementById('J-coupon-ok');
+      oDownloadmore.onclick=function(){
+      oLovecoupon.style.zIndex="1000";
+      oLovecoupon.style.opacity="1";
+      // oLovecoupon.style.display="-webkit-box;"
+      // oMask.style.display="block"
+      oMask.style.zIndex="100";
+      oMask.style.opacity="1";
+      }
+      oCouponok.onclick=function(){
+      oLovecoupon.style.zIndex="-1";
+      oLovecoupon.style.opacity="0";
+      oMask.style.zIndex="-1";
+      oMask.style.opacity="0";
+      }
+      $('.love-header-icon').click(function(){
+      history.back();
+      });
+      $('.love-header-car, .foot-shopcar').click(function(){
+      util.alertHint('添加购物车成功');
+      })
+      $('.love-coupon-concessions ul li a').click(function(){
+      oLovecoupon.style.zIndex="-1";
+      oLovecoupon.style.opacity="0";
+      oMask.style.zIndex="-1";
+      oMask.style.opacity="0";
+      util.alertHint('优惠券领取成功');
+      })
+      $('.love-collect-favorites').click(function(){
+      util.alertHint('店铺收藏成功');
+      })
+      $('.love-foot-like').click(function(){
+      util.alertHint('添加到喜欢列表');
+      $(this).children('.iconfont').removeClass('icon-xin').addClass('icon-xin1').css('color', 'red');
+      })
+      }

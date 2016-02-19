@@ -1,0 +1,398 @@
+doctype html
+html(lang='zh-cn')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title love-journey
+    meta(name='description', content='love-journey')
+    meta(name='viewport', content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    meta(name='format-detection', content='telephone=no')
+    // iconfont
+    link(rel='stylesheet', type='text/css', href='/dist/plugins/iconfont/iconfont.css')
+    // style
+    // <link rel="stylesheet" type="text/css" href="/dist/css/index.min.css">
+    link(rel='stylesheet', type='text/css', href='/dist/css/index.css')
+    // component
+    link(rel='stylesheet', type='text/css', href='/dist/css/component.css')
+    // According to the screen automatically set the font size
+    script(src='/dist/js/factory/accordingScreenAutoSetFontSize.js')
+  body
+    .love-container
+      // header
+      .love-header.clearfix
+        span#J_leftMenu.love-menu-icon.iconfont.icon-caidan
+        .love-header-search.clearfix
+          span.iconfont.icon-sousuo
+          input(type='text')
+          span.iconfont.icon-huiche
+        span.love-shopcar.iconfont.icon-gouwuche
+      // 左侧菜单
+      #J_leftMenuBox.love-left-menu
+        ul
+          li
+            a(href='#') 111
+          li
+            a(href='#') 111
+          li
+            a(href='#') 111
+          li
+            a(href='#') 111
+          li
+            a(href='#') 111
+          li
+            a(href='#') 111
+          li
+            a(href='#') 111
+      // mask
+      #J_mask.love-mask   
+      // 顶部登录
+      .love-top-login.clearfix.J_topLogin
+        .form-shunt
+          img(src='/dist/images/love-login-bg.jpg', width='100%')
+          .love-top-login-controller
+            a#J-btn-login.btn-login(href='javascript:;') 登录
+            a#J-btn-download.btn-download(href='javascript:;') 下载
+            .other-login
+              a.iconqq(href='')
+                img(src='/dist/images/love-qq.png')
+              a.iconweibo(href='')
+                img(src='/dist/images/love-weibo.png')
+          // 登录界面
+          #J-love-enter.love-enter.clearfix
+            a#J-enter-back.enter-back.iconfont.icon-fanhui(href='javascript:;') 返回
+            a#J-enter-logon.enter-logon(href='javascript:;') 注册
+            .love-enter-controller
+              input#J-login-username.love-enter-account(type='text', placeholder='昵称/邮箱/手机号')
+              input#J-login-password.love-enter-download(type='password', placeholder='密码')
+              a#J-enter-login.love-enter-login(href='javascript:;') 登录
+              .enter-other-login
+                a.love-enter-iconqq(href='')
+                  img(src='/dist/images/love-qq.png')
+                a.love-enter-iconweibo(href='')
+                  img(src='/dist/images/love-weibo.png')
+          // 注册
+          #J-love-logon.love-logon
+            a#J-logon-back.logon-back.iconfont.icon-fanhui(href='javascript:;') 返回
+            a#J-logon-login.logon-login(href='javascript:;') 登录
+            .love-logon-controller.clearfix
+              input.love-logon-num(type='text', placeholder='请输入手机号')
+              .love-logon-box
+                input.love-logon-authcode(type='text', placeholder='验证码')
+                a.love-logon-click(href='javascript:;') 点击获取
+              input.love-logon-download(type='password', placeholder='密码')
+              a.love-logon-enroll(href='javascript:;') 立即注册
+      // 特色市场
+      .love-feature-market
+        .buy-markets
+          .makets-title 特色市场
+          .makets-content.clearfix
+            ul
+              li.module-item
+                a(href='/index/slider')
+                  .item-logo
+                    img(src='/dist/images/love-feature1.jpg')
+                  .item-title 品牌
+                  .item-desc 冬季大牌攻略
+              li.module-item
+                a(href='/index/slider')
+                  .item-logo
+                    img(src='/dist/images/love-feature2.jpg')
+                  .item-title 红人Bazaar
+                  .item-desc 冬日红人热款
+              li.module-item
+                a(href='/index/slider')
+                  .item-logo
+                    img(src='/dist/images/love-feature3.jpg')
+                  .item-title 心水好货
+                  .item-desc 2016开运好物
+              li.module-item
+                a(href='/index/slider')
+                  .item-logo
+                    img(src='/dist/images/love-feature4.jpg')
+                  .item-title 设计师
+                  .item-desc 设计师新款来袭
+              li.module-item
+                a(href='/index/slider')
+                  .item-logo
+                    img(src='/dist/images/love-feature5.jpg')
+                  .item-title 轻时髦
+                  .item-desc 时髦轻生活
+              li.module-item
+                a(href='/index/slider')
+                  .item-logo
+                    img(src='/dist/images/love-feature6.jpg')
+                  .item-title 享瘦
+                  .item-desc 能让你变瘦
+              li.module-item
+                a(href='/index/slider')
+                  .item-logo
+                    img(src='/dist/images/love-feature7.jpg')
+                  .item-title 淘淘馆
+                  .item-desc 全球超值好货
+      // 限时抢购
+      .love-flash-sale
+        .love-flash-main
+          .love-flash-title
+            span.iconfont.icon-shijian
+            span 限时快抢
+          .love-count-down
+            span.love-time.J_timeHours 00
+            | :
+            span.love-time.J_timeMinutes 00
+            | :
+            span.love-time.J_timeSeconds 00
+          .love-flash-item
+            a(href='/index/good')
+              img(src='/dist/images/love-flash-main.jpg', alt='')
+        .love-flash-list
+          .love-list-top
+            a(href='/index/good')
+              img(src='/dist/images/love-flash-top.jpg', alt='')
+          .love-list-bottom
+            .love-list-left
+              a(href='/index/good')
+                img(src='/dist/images/love-flash-left.jpg', alt='')
+            .love-list-right
+              a(href='/index/good')
+                img(src='/dist/images/love-flash-right.jpg', alt='')
+      // 图片分类
+      .love-img-category
+        .love-module-title 全部商品
+        ul.love-category-list.clearfix
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category1.jpg', alt='')
+            p.love-category-name 上衣
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category2.jpg', alt='')
+            p.love-category-name 裤子
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category3.jpg', alt='')
+            p.love-category-name 裙子
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category4.jpg', alt='')
+            p.love-category-name 内衣
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category5.jpg', alt='')
+            p.love-category-name 鞋子
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category6.jpg', alt='')
+            p.love-category-name 包包
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category7.jpg', alt='')
+            p.love-category-name 男友
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category8.jpg', alt='')
+            p.love-category-name 美妆
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category9.jpg', alt='')
+            p.love-category-name 配饰
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category10.png', alt='')
+            p.love-category-name 母婴
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category11.png', alt='')
+            p.love-category-name 家居
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category12.jpg', alt='')
+            p.love-category-name 个护
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category13.png', alt='')
+            p.love-category-name 百货
+            p.love-category-description 新年换新衣
+          li.love-category-item
+            a(href='/index/waist')
+              img(src='/dist/images/love-category14.jpg', alt='')
+            p.love-category-name 零食
+            p.love-category-description 新年换新衣
+      // 商品列表
+      .love-item-list.clearfix
+        .love-item-main(style='margin-right: 2%;')
+          span.love-item-label 母婴
+          a.love-item-img(href='/index/good')
+            .love-img-detail
+              img(src='/dist/images/love-item1.png', width='100%', alt='')
+          .love-item-content
+            a(href='/index/good') 十元封顶vol.29
+            p 生活需要美好小物来搭配~
+        .love-item-main
+          span.love-item-label 家居
+          a.love-item-img(href='/index/good')
+            .love-img-detail
+              img(src='/dist/images/love-item1.jpg', width='100%', alt='')
+          .love-item-content
+            a(href='/index/good') 小小型男
+            p 小型男品味从小培养，绝对百搭必备款！
+        .love-item-main(style='margin-right: 2%;')
+          span.love-item-label 母婴
+          a.love-item-img(href='/index/good')
+            .love-img-detail
+              img(src='/dist/images/love-item1.png', width='100%', alt='')
+          .love-item-content
+            a(href='/index/good') 十元封顶vol.29
+            p 生活需要美好小物来搭配~
+        .love-item-main
+          span.love-item-label 家居
+          a.love-item-img(href='/index/good')
+            .love-img-detail
+              img(src='/dist/images/love-item1.jpg', width='100%', alt='')
+          .love-item-content
+            a(href='/index/good') 小小型男
+            p 小型男品味从小培养，绝对百搭必备款！
+        .love-item-main(style='margin-right: 2%;')
+          span.love-item-label 母婴
+          a.love-item-img(href='/index/good')
+            .love-img-detail
+              img(src='/dist/images/love-item1.png', width='100%', alt='')
+          .love-item-content
+            a(href='/index/good') 十元封顶vol.29
+            p 生活需要美好小物来搭配~
+        .love-item-main
+          span.love-item-label 家居
+          a.love-item-img(href='/index/good')
+            .love-img-detail
+              img(src='/dist/images/love-item1.jpg', width='100%', alt='')
+          .love-item-content
+            a(href='/index/good') 小小型男
+            p 小型男品味从小培养，绝对百搭必备款！
+      // 底部下载
+      .love-footer-download
+        // <span class="love-download-close iconfont icon-guanbi"></span>
+        img(src='/dist/images/logo.png', alt='')
+        span.love-site-slogan 更多变美妙招一学就会
+        a.love-download-btn 立即下载
+    // zepto
+    script(src='/dist/plugins/zepto/zepto.min.js')
+    // util
+    script(src='/dist/js/factory/util.js')
+    script.
+      $(function(){
+      /**
+      * [leftMenun 左侧菜单显示/隐藏]
+      * @return {[type]} [description]
+      */
+      function leftMenun(){
+      //显示
+      $('#J_leftMenu').click(function(){
+      $('#J_mask').css('display', 'block');
+      $('#J_leftMenuBox').css({'visibility': 'visible', 'left': 2+'rem'});
+      //阻止页面滚动
+      // util.switchPageScroll(true);
+      })
+      //隐藏
+      $('#J_mask, #J_leftMenuBox').click(function(){
+      $('#J_mask').css('display', 'none');
+      $('#J_leftMenuBox').css({'visibility': 'hidden', 'left': -2+'rem'});
+      //开启页面滚动
+      // util.switchPageScroll(false);
+      })
+      }
+      leftMenun();
+      /**
+      * [countDown 倒计时]
+      * @return {[type]} [description]
+      */
+      function countDown(){
+      // var a = +new Date('2016-01-16 16:59:11');
+      var a = '1483949141293';
+      setInterval(function(){
+      var o = {};
+      o = util.countDown(a);
+      $('.J_timeHours').html(util.fillZero(o.hour));
+      $('.J_timeMinutes').html(util.fillZero(o.minute));
+      $('.J_timeSeconds').html(util.fillZero(o.second));
+      },1000)
+      }
+      countDown();
+      /**
+      * [login login]
+      * @return {[type]} [description]
+      */
+      function login(){
+      //登录
+      $('#J-btn-login').click(function(){
+      $('#J-love-enter').css('display', 'block');
+      })
+      //返回
+      $('#J-enter-back').click(function(){
+      $('#J-love-enter').css('display', 'none');
+      })
+      //登录操作；
+      $('#J-enter-login').click(function(){
+      var oFormData = {
+      'username': $('#J-login-username').val(),
+      'password': $('#J-login-password').val(),
+      };
+      $.ajax({
+      url: '/index.php/index/login',
+      type: 'post',
+      data: oFormData,
+      success: function(result){
+      var result = JSON.parse(result);
+      if (result.ret == true) {
+      util.alertHint('登录成功');
+      $('.J_topLogin').hide();
+      $('.love-feature-market').css('padding-top','.3rem');
+      return;
+      }else{
+      util.alertHint('用户密码错误');
+      return;
+      }
+      },
+      error: function(xhr, type){
+      util.alertHint('Ajax error!')
+      }
+      })
+      })
+      }
+      login();
+      /**
+      * [register register]
+      * @return {[type]} [description]
+      */
+      function register(){
+      //注册
+      $('#J-enter-logon').click(function(){
+      $('#J-love-logon').css('display', 'block');
+      })
+      //登录
+      $('#J-logon-login').click(function(){
+      $('#J-love-enter').css('display', 'block');
+      $('#J-love-logon').css('display', 'none');
+      })
+      //返回
+      $('#J-logon-back').click(function(){
+      $('#J-love-logon, #J-love-enter').css('display', 'none');
+      })
+      }
+      register();
+      $('.love-download-btn').click(function(){
+      util.alertHint('hanjiehanjiehanjiehanjiehanjiehanjiehanjie');
+      })
+      })

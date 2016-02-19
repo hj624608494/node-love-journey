@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+	var listDatas = [1,2,3,4,5];
+  res.render('test', { title: 'ejs' , list: listDatas});
 });
 
 
